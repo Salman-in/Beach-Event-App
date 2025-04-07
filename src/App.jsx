@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      Beach App  changed by nouman
+      Beach App  changed by nouman.
     </>
   )
 }
