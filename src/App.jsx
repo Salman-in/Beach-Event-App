@@ -1,16 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import Events from './pages/Events'
+import BeachAttractions from './pages/BeachAttractions'
+import Calendar from './pages/Calendar'
+import Register from './pages/Register'
+import Login from './pages/Login'
+import AdminDashboard from './pages/AdminDashboard'
+import NavbarComp from './components/Navbar'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      Beach App  changed by nouman.
-    </>
+    <Router>
+      <NavbarComp />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/beaches" element={<BeachAttractions />} />
+        <Route path="/calendar" element={<Calendar />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/admin" element={<AdminDashboard />} />
+      </Routes>
+    </Router>
   )
 }
-
-export default App
