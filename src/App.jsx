@@ -7,7 +7,7 @@ import Register from './pages/Register'
 import Login from './pages/Login'
 import AdminDashboard from './pages/AdminDashboard'
 import NavbarComp from './components/Navbar'
-import Beaches from './pages/beaches' // Make sure the filename matches case-sensitively!
+import Beaches from './pages/beaches'
 import './App.css';
 
 export default function App() {
