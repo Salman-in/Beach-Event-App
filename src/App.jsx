@@ -7,6 +7,8 @@ import Register from './pages/Register'
 import Login from './pages/Login'
 import AdminDashboard from './pages/AdminDashboard'
 import NavbarComp from './components/Navbar'
+import Beaches from './pages/beaches' // Make sure the filename matches case-sensitively!
+import './App.css';
 
 export default function App() {
   return (
@@ -19,6 +21,7 @@ export default function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/admin" element={<AdminDashboard />} />
+        <Route path="/beaches" element={<Beaches />} /> {/* ✅ Added route */}
       </Routes>
     </Router>
   )
